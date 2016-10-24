@@ -6,7 +6,7 @@ A set of useful widgets for jekyll sites.
 
 ## What it does
 
-Jekyll Widgets is a collection of snippets for common hosted apps & widgets such as a youtube video, facebook comments or Google Analytics.
+Jekyll Widgets is a collection of snippets for common hosted apps & widgets such as facebook comments or Google Analytics.
 
 ## Installation
 
@@ -49,7 +49,6 @@ options:
 Is the same as:
 
 ```liquid
----
 {% widget piwik site_id=123 baseurl="//example.com" %}
 ```
 
