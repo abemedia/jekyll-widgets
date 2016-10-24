@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -ex
+
+bundle exec rubocop -S -D
+bundle exec gem build jekyll-widgets.gemspec

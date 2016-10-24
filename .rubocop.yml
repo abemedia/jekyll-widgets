@@ -1,0 +1,16 @@
+inherit_gem:
+  jekyll: .rubocop.yml
+
+Metrics/LineLength:
+  Exclude:
+    - jekyll-widgets.gemspec
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - vendor/**/*

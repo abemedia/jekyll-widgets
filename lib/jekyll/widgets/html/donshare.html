@@ -1,0 +1,16 @@
+<div class="don-share" data-style="{{ include.style }}" data-bubbles="{{ include.bubbles }}" data-limit="{{ include.limit }}">
+  <div class="don-share-total"></div>
+  {% assign providers = include.providers | split: "," %}
+  {% for provider in providers %}
+  {% assign provider = provider | trim %}
+  <div class="don-share-{{ provider }}"></div>
+  {% endfor %}
+</div>
+<script type="text/javascript">
+  (function() {
+    var dr = document.createElement('script');
+    dr.type = 'text/javascript'; dr.async = true;
+    dr.src = '//share.donreach.com/buttons.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dr);
+  })();
+</script>

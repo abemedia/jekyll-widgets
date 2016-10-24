@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  document.write(unescape("%3Cscript src='{{ include.baseurl }}/piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var piwikTracker = Piwik.getTracker("{{ include.baseurl }}/piwik.php", {{ include.site_id }});
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+</script>
+<noscript><p><img src="{{ include.baseurl }}/piwik.php?idsite={{ include.site_id }}" style="border:0" alt="" /></p></noscript>
