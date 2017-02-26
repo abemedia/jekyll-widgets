@@ -1,7 +1,16 @@
+language: ruby
 rvm:
   - 2.2.3
+
 before_install: gem install bundler
-language: ruby
 script: script/cibuild
+
+deploy:
+  gem: jekyll-widgets
+  provider: rubygems
+  api_key: $RUBYGEMS_KEY
+  on:
+    tags: true
+
 sudo: false
 cache: bundler
