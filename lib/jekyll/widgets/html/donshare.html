@@ -1,5 +1,5 @@
 <div class="don-share" data-style="{{ include.style }}" data-bubbles="{{ include.bubbles }}" data-limit="{{ include.limit }}">
-  <div class="don-share-total"></div>
+  {% unless include.hide_total %}<div class="don-share-total"></div>{% endunless %}
   {% assign providers = include.providers | split: "," %}
   {% for provider in providers %}
   {% assign provider = provider | trim %}
